@@ -1,0 +1,19 @@
+@import '../../main-styles.scss';
+
+.budget-items-section {
+  display: flexbox;
+  padding: 50px;
+
+  .budget-items-container {
+    display: flex;
+    max-width: 680px;
+    height: 100%;
+    width: 100%;
+
+    .income-column,
+    .expenses-column {}
+
+  }
+
+
+}

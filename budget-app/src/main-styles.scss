@@ -37,9 +37,9 @@ $link: $purple;
 // Update some of Bulma's component variables
 $body-background-color: white;
 $control-border-width: 2px;
-$input-border-color: $light-grey;
+$input-background-color: $light-grey;
 $input-shadow: none;
-
+$input-border-color: transparent;
 // Import only what you need from Bulma
 // @import "../node_modules/bulma/sass/utilities/_all.sass";
 // @import "../node_modules/bulma/sass/base/_all.sass";
