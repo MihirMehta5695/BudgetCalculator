@@ -1,8 +1,12 @@
 @import '../../main-styles.scss';
 
 .budget-items-section {
-  display: flexbox;
+  display: flex;
   padding: 50px;
+
+  //horizontally and vertically center the flex children
+  justify-content: center;
+  align-items: center;
 
   .budget-items-container {
     display: flex;
@@ -11,7 +15,34 @@
     width: 100%;
 
     .income-column,
-    .expenses-column {}
+    .expenses-column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 0; //columns to be of same size regardless of the content
+      flex-grow: 1; // so that columns take up all available space
+
+      h1 {
+        font-family: "Lato";
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+    }
+
+    .income-column {
+      margin-right: 35px;
+
+      h1 {
+        color: $green;
+      }
+    }
+
+    .expenses-column {
+
+      h1 {
+        color: $red;
+      }
+    }
 
   }
 
